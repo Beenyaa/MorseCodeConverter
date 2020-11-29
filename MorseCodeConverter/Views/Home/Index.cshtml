@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">MorseCoder</h1>
+    <p>Translate to or from morse code easily.</p>
+    <textarea class="form-control" id="EnglishTextIn" name="EnglishTextIn" rows="4" cols="50" placeholder="Type English Text Here"></textarea>
+    <textarea class="form-control" readonly id="MorseCodeOut" name="MorseCodeOut" rows="4" cols="50" placeholder="Morse Code Appears Here"></textarea>
+
+    <button class="btn btn-success" id="englishToMorse" type="button">English to Morse Code</button>
+
+    <textarea class="form-control" id="MorseCodeIn" name="MorseCodeIn" rows="4" cols="50" placeholder="Type Morse Code Here (Separate letters by placing space between morse codes, separate words by using the | character)"></textarea>
+    <textarea class="form-control" readonly id="EnglishTextOut" name="EnglishTextOut" rows="4" cols="50" placeholder="Text Appears Here"></textarea>
+
+    <button class="btn btn-success" id="morseToEnglish" type="button">Morse Code to English</button>
+</div>
+
+<script src="~/js/site.js"></script>
